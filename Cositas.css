@@ -1,0 +1,35 @@
+.header {
+    background-image: url('f.elconfidencial.com_original_905_7e1_71b_9057e171be3067a7f400be1de14efd7d.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ubicación de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el encabezado */
+    background-position: center; /* Centra la imagen en el encabezado */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    text-decoration-color: azure;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las columnas equitativamente horizontalmente */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en filas cuando el espacio es limitado */
+  }
+  
+  .column {
+    width: 25%; /* Establece un ancho para las columnas, puedes ajustar según tus necesidades */
+    margin: 1%; /* Añade un margen entre las columnas */
+    padding: 10px;
+    background-color: #aaa; /* Define el color de fondo de las columnas */
+  }
+  
+  /* Estilos específicos para pantallas más pequeñas */
+  @media (max-width: 500px) {
+    .container {
+      flex-direction: column; /* Cambia la dirección de las columnas a vertical */
+    }
+  
+    .column {
+      width: 90%; /* Ocupan todo el ancho disponible en pantallas pequeñas */
+    }
+  }
+  
+  
